@@ -204,9 +204,17 @@
     
 
 
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Crohn_Disease -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Crohn_Disease"/>
+    
+
+
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diagnosis -->
 
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diagnosis"/>
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Crohn_Disease"/>
+    </owl:Class>
     
 
 
@@ -268,7 +276,9 @@
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Patient_Information -->
 
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Patient_Information"/>
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Patient_Information">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Crohn_Disease"/>
+    </owl:Class>
     
 
 
@@ -290,13 +300,17 @@
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms -->
 
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Crohn_Disease"/>
+    </owl:Class>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Treatments -->
 
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Treatments"/>
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Treatments">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Crohn_Disease"/>
+    </owl:Class>
     
 
 
