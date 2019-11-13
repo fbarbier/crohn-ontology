@@ -13,6 +13,71 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_complication -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_complication"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_diagnosis -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_diagnosis"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_patient_info -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_patient_info"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_diet -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_diet"/>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug -->
+
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -41,14 +106,6 @@
     
 
 
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Digestive_Signs -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Digestive_Signs">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Disease_activity -->
 
     <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Disease_activity">
@@ -73,26 +130,10 @@
     
 
 
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Extra_Digestive_Signs -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Extra_Digestive_Signs">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fistulizing_Disease -->
 
     <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fistulizing_Disease">
         <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#General_Signs -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#General_Signs">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
     </owl:Class>
     
 
@@ -183,6 +224,14 @@
 
     <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Urinary_Tract_Infections">
         <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
     </owl:Class>
 </rdf:RDF>
 
