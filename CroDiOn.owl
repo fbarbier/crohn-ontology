@@ -21,57 +21,127 @@
     
 
 
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_complication -->
-
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_complication"/>
-    
-
-
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_diagnosis -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_diagnosis"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_diagnosis">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diagnosis"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Laboratory_Investigation"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_patient_info -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_patient_info"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_patient_info">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Patient_Information"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Treatments"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_diet -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_diet"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_diet">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diets"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drugs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#First_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#First_name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Last_name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#birthdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#birthdate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_boolean_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_boolean_value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#sex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#sex">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -86,9 +156,51 @@
     
 
 
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications -->
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements -->
 
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drugs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti_inflammation -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti_inflammation">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drugs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Antibiotics -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Antibiotics">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drugs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biologics -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biologics">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drugs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biologics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cortisone_or_steroids -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cortisone_or_steroids">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drugs"/>
+    </owl:Class>
     
 
 
@@ -130,26 +242,10 @@
     
 
 
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fistulizing_Disease -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fistulizing_Disease">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Genetic_Testing -->
 
     <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Genetic_Testing">
         <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diagnosis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Hepatobiliary_and_pancreatic_manifestations -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Hepatobiliary_and_pancreatic_manifestations">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
     </owl:Class>
     
 
@@ -162,26 +258,10 @@
     
 
 
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Intestinal_Malignancy -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Intestinal_Malignancy">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Laboratory_Investigation -->
 
     <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Laboratory_Investigation">
         <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diagnosis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Occlusion -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Occlusion">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
     </owl:Class>
     
 
@@ -220,19 +300,506 @@
     
 
 
-    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Urinary_Tract_Infections -->
-
-    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Urinary_Tract_Infections">
-        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms -->
 
     <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms">
         <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#high_protein -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#high_protein">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#immunomodulators -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#immunomodulators">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biologics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#low_residue -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#low_residue">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#probiotics -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#probiotics">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#vitamin_and_mineral_supplements -->
+
+    <owl:Class rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#vitamin_and_mineral_supplements">
+        <rdfs:subClassOf rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diets"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Abdominal_pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Abdominal_pain">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Abscess_drainage -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Abscess_drainage">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Adalimumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Adalimumab">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Altered_appetite -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Altered_appetite">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ampicillin -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ampicillin">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anal_pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anal_pain">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anemia -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anemia">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Azathioprine -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Azathioprine">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#immunomodulators"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Bismuth_subsalicylate -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Bismuth_subsalicylate">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Budesonide -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Budesonide">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cortisone_or_steroids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Certolizumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Certolizumab">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ciprofloxacin -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ciprofloxacin">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Codeine_sulfate -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Codeine_sulfate">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Colectomy -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Colectomy">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Colesevelam -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Colesevelam">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cyclosporine -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cyclosporine">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#immunomodulators"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diarrhea">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diphenoxylate -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diphenoxylate">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drowsiness -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drowsiness">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fever">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fistula_removal -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fistula_removal">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fungal_and_bacterial_infections -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Fungal_and_bacterial_infections">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Headache -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Headache">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Hydrocortisone -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Hydrocortisone">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cortisone_or_steroids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Infliximab -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Infliximab">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Loperamide -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Loperamide">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Mesalamine -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Mesalamine">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti_inflammation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Methotrexate -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Methotrexate">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#immunomodulators"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Methylprednisolone -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Methylprednisolone">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cortisone_or_steroids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Metronidazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Metronidazole">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Mouth_ulcers -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Mouth_ulcers">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Natalizumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Natalizumab">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Nausea -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Nausea">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Night_awakening -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Night_awakening">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Olsalazine -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Olsalazine">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti_inflammation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Prednisone -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Prednisone">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Cortisone_or_steroids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Proctocolectomy -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Proctocolectomy">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Psyllium_husk -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Psyllium_husk">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti-diarrheal_and_fluid_replacements"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Rectal_bleeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Rectal_bleeding">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Resection -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Resection">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Rifaximin -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Rifaximin">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Skin_rash_and_inflammation -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Skin_rash_and_inflammation">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Strictureplasty -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Strictureplasty">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Sulfasalazine -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Sulfasalazine">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Anti_inflammation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Tacrolimus -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Tacrolimus">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#immunomodulators"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Tetracycline -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Tetracycline">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ulcers_in_the_gut -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ulcers_in_the_gut">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ustekinumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Ustekinumab">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Uveitis -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Uveitis">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Vedolizumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Vedolizumab">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Biosimilars"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Vomiting -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Vomiting">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Weight_loss -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Weight_loss">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#crohn_symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#6-mercaptopurine -->
+
+    <owl:NamedIndividual rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#6-mercaptopurine">
+        <rdf:type rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#immunomodulators"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Diagnosis"/>
+            <rdf:Description rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Patient_Information"/>
+            <rdf:Description rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
+            <rdf:Description rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Treatments"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
