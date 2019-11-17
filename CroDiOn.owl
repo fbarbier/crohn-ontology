@@ -33,37 +33,49 @@
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_complication -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_complication"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_complication">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Complications"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_laboratory">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Laboratory_Investigation"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_location -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_location"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_location">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Locations"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_surgery">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Surgery"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_symptom">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Symptoms"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#has_treatment">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Treatments"/>
+    </owl:ObjectProperty>
     
 
 
@@ -75,7 +87,9 @@
 
     <!-- http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug -->
 
-    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug"/>
+    <owl:ObjectProperty rdf:about="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#takes_drug">
+        <rdfs:domain rdf:resource="http://www.isped.u-bordeaux.fr/ontologies/CroDiOn#Drugs"/>
+    </owl:ObjectProperty>
     
 
 
